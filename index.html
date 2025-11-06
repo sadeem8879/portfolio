@@ -4,14 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Sadeem Rehan - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-6f7jF4H64Az1MD4swsmKfo6qkLOIrDHRMK9W8xKSK9r5Ug96q4JqUy4EVxUPcT/Glk3DndzEwHQmDCDj3lHrg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
 
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link
@@ -19,6 +18,7 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -32,63 +32,51 @@
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNavDropdown">
+            <div class="collapse navbar-collapse me-3 " id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item">
                         <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">ABOUT</a>
+                        <a class="nav-link text-white" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">SKILLS</a>
+                        <a class="nav-link text-white" href="#skills">SKILLS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">PROJECTS</a>
+                        <a class="nav-link text-white" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">CONTACT</a>
+                        <a class="nav-link text-white" href="#contact">CONTACT</a>
                     </li>
                     <li class="nav-item">
-                        <!-- <a class="nav-link text-white" href="#">CONTACT</a> -->
-                        <input type="button" value="Let's Talk" id="talk-btn">
-
+                        <input type="button" class="mt-1" value="Let's Talk" id="talk-btn">
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
+
     <div class="login-form-container ">
-        <div id="close-login-btn" class="fas fa-times text-white mt-5 pt-5"></div>
+        <div id="close-login-btn" class="fas fa-times"></div>
 
         <form action="" method="POST" id="contact-form" class="border border-2 border-info">
             <h3 class="mb-3 ">Contact Me</h3>
             <hr class="w-100 text-info" ">
-            <!-- Name Input with validation --> 
             <input type=" text" class="form-control mb-2" id="name" placeholder="Your Name" required>
-
-            <!-- Email Input with validation -->
             <input type="email" class="form-control mb-2" id="email" placeholder="Your Email" required>
-
-            <!-- Subject Input with validation -->
             <textarea class="form-control mb-3" id="subject" rows="3" placeholder="Subject" required></textarea>
-
-            <!-- Message Input with validation -->
             <textarea class="form-control mb-3" id="message" rows="3" placeholder="Your Message" required></textarea>
-
-            <!-- Submit Button -->
             <button class="btn btn-primary" type="submit">Send Message</button>
         </form>
     </div>
 
-
     <section class="container">
         <div class="row">
-            <div class="col-lg-6 fw-bold col-md-6 col-sm-12 mt-5 pt-5  home-section">
+            <div class="col-lg-6 fw-bold col-md-6 col-sm-12 mt-5 pt-5 home-section">
                 <h1 class="half-name mt-4">Hello My Name is </h1>
                 <div class="d-flex">
-                    <h1 class="myname  fw-bold ms-5 mt-2">Sadeem Rehan </h1><img src="./image/moving-hand.gif"
+                    <h1 class="myname fw-bold ms-5 mt-2">Sadeem Rehan </h1><img src="./image/moving-hand.gif"
                         width="75px" height="60px" alt="">
                 </div>
                 <h1 class="half-name fw-bold">I am a <span id="typed-text"
@@ -110,142 +98,103 @@
                     <i class="fa-brands fa-square-instagram fs-4 text-info"></i>
                 </a>
                 <div>
-                    <input type="button" class="mt-3 resume-btn " value="Resume">
+                  <a href="documents/myresume.pptx">  <input type="button" class="mt-3 resume-btn ms-5 " style="margin-left: 100px !important;" value="Resume">
+                    </a>   
                 </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 img-fluid">
-                <img src="./image/hi-robot.gif" class="mt-5  pt-5 " alt="">
+                <img src="./image/hi-robot.gif" class="mt-5 pt-5 " alt="">
             </div>
         </div>
     </section>
-    <!-- <section class="container">
-        <div class="row">
-            <h1 class=" mt-5 pt-5">About Me</h1>
-            <div class="col-lg-6">
-                <h4>I'm Sadeem Rehan i am a Web Developer</h4>
-                <p><i class="fa-solid fa-spinner spinner"></i>I am a passionate programmer who loves solving complex
-                    problems and continuously learning new skills.</p>
-                <p><i class="fa-solid fa-spinner spinner"></i>Proficient in JavaScript , I enjoy working on both
-                    front-end and back-end development.</p>
-                <p><i class="fa-solid fa-spinner spinner"></i>My focus is on creating innovative web technologies and
-                    products that help make the digital world more accessible and user-friendly.</p>
+
+    <section id="about" class="container my-5 py-5">
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h1 class="fw-bold text-info border-bottom pb-2 d-inline-block">About Me</h1>
             </div>
-            <div class="col-lg-6">
-                <div class="d-flex gap-5">
-                    <p class="bio-text me-5">Email: <span>ansarisadeem8879@gmail.com</span> </p>
-                    <p class="bio-text">Age: <span>18</span> </p>
-
+        </div>
+        <div class="row justify-content-center align-items-start gx-lg-5">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+                <h4 class="fw-semibold mb-4">
+                    I'm <span style="color:#00ccff;">Sadeem Rehan</span>, a Web Developer passionate about building
+                    digital experiences.
+                </h4>
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
+                    <p class="mb-0">
+                        A passionate programmer who enjoys solving complex problems and continuously learning new
+                        technologies.
+                    </p>
                 </div>
-                <div class="d-flex gap-5">
-                    <p class="bio-text me-5" style="margin-right: 190px !important;">DOB: <span>14/08/2006</span> </p>
-                    <p class="bio-text">Mobile no: <span>8879480322</span> </p>
-
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
+                    <p class="mb-0">
+                        Proficient in <b>JavaScript</b>, I love working on both <b>front-end</b> and
+                        <b>back-end</b> development to create full-stack web applications.
+                    </p>
                 </div>
-                <div class="">
-                    <p class="bio-text">City: <span>Mumbai</span> </p>
-
+                <div class="d-flex mb-3">
+                    <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
+                    <p class="mb-0">
+                        My focus is on building <b>innovative web technologies</b> that make the digital world more
+                        accessible, interactive, and user-friendly.
+                    </p>
                 </div>
+                <div class="d-flex">
+                    <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
+                    <p class="mb-0">
+                        Currently pursuing a <b>Bachelor of Engineering in Information Technology</b> and completed a
+                        <b>MERN Stack Internship at KafkaTech</b>.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <p class="bio-text mb-3">📧 <b>Email:</b> <span>ansarisadeem8879@gmail.com</span></p>
+                <p class="bio-text mb-3">🎂 <b>Age:</b> <span>19</span></p>
+                <p class="bio-text mb-3">📅 <b>DOB:</b> <span>14/08/2006</span></p>
+                <p class="bio-text mb-3">📞 <b>Mobile:</b> <span>8879480322</span></p>
+                <p class="bio-text mb-4">📍 <b>City:</b> <span>Mumbai</span></p>
+              <div class="text-center text-lg-start mt-4">
+    <a href="documents/myresume.pptx" target="_blank" class="resume-btn">View Resume</a>
+</div>
 
             </div>
         </div>
-    </section> -->
-  <section id="about" class="container my-5 py-5">
-  
-  <div class="row mb-5">
-    <div class="col-12 text-center">
-      <h1 class="fw-bold text-info border-bottom pb-2 d-inline-block">About Me</h1>
-    </div>
-  </div>
+    </section>
 
-  <div class="row justify-content-center align-items-start gx-lg-5">
-
-    <div class="col-lg-7 mb-4 mb-lg-0">
-      <h4 class="fw-semibold mb-4">
-        I'm <span style="color:#00ccff;">Sadeem Rehan</span>, a Web Developer passionate about building digital experiences.
-      </h4>
-      
-      <div class="d-flex mb-3">
-        <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
-        <p class="mb-0">
-          A passionate programmer who enjoys solving complex problems and continuously learning new technologies.
-        </p>
-      </div>
-      <div class="d-flex mb-3">
-        <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
-        <p class="mb-0">
-          Proficient in <b>JavaScript</b>, I love working on both <b>front-end</b> and <b>back-end</b> development to create full-stack web applications.
-        </p>
-      </div>
-      <div class="d-flex mb-3">
-        <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
-        <p class="mb-0">
-          My focus is on building <b>innovative web technologies</b> that make the digital world more accessible, interactive, and user-friendly.
-        </p>
-      </div>
-      <div class="d-flex">
-        <i class="fa-solid fa-chevron-right text-info mt-1 me-3"></i>
-        <p class="mb-0">
-          Currently pursuing a <b>Bachelor of Engineering in Information Technology</b> and completed a <b>MERN Stack Internship at KafkaTech</b>.
-        </p>
-      </div>
-    </div>
-
-    <div class="col-lg-5">
-      <p class="bio-text mb-3">📧 <b>Email:</b> <span>ansarisadeem8879@gmail.com</span></p>
-      <p class="bio-text mb-3">🎂 <b>Age:</b> <span>19</span></p>
-      <p class="bio-text mb-3">📅 <b>DOB:</b> <span>14/08/2006</span></p>
-      <p class="bio-text mb-3">📞 <b>Mobile:</b> <span>8879480322</span></p>
-      <p class="bio-text mb-4">📍 <b>City:</b> <span>Mumbai</span></p>
-      
-      <div class="text-center text-lg-start mt-4">
-        <a href="#" class="resume-btn">Download Resume</a>
-      </div>
-    </div>
-
-  </div>
-</section>
     <section class="container mb-5">
         <div class="row">
             <div class="col-lg-6 ">
                 <div class=" border border-2 border-info p-3 mb-2">
                     <h4>Education <i class="fa-solid fa-diploma"></i>:</h4>
-
-
                     <h5>Diploma in Computer Engineering</h5>
                     <p>College: M.H. Saboo Siddik Polytechnic College</p>
                     <p>Location: Mumbai</p>
                     <p>Duration: 2022-2025</p>
-                    <input type="button" value="View Result" class="btn btn-primary">
-                    <!-- <div class="d-flex gap-3">
-                        <i class="fa-solid fa-school fs-5"></i>
-                        <h5>SSC:</h5>
-                        <p style="color: rgb(255, 238, 0);">Percentage: 87.20%</p>
-
-                        <input type="button" value="View Result" class="btn btn-primary mb-2">
+                    <a href="documents/sem6result.pdf">
+                    <input type="button" value="View Result" class="btn btn-primary"></a>
+                    <br>
+                    <div class="mt-4 mb-3">
+                        <h5> Currently Pursing A Bechelor Of Engineering In Information Technology</h5>
+                        <p>College: M.H. Saboo Siddik College Of Engineering</p>
+                        <p>Location: Mumbai</p>
+                        <p>Duration: 2025-2026</p>
                     </div>
-                    </div> -->
-                <!-- </div> -->
-                <!-- <div class=" border border-2 border-info p-3 mb-2"> --><br>
-                <div class="mt-4 mb-3"><h5 > Currently Pursing A Bechelor Of Engineering In Information Technology</h5> 
-                     <p>College: M.H. Saboo Siddik College Of Engineering</p>
-                    <p>Location: Mumbai</p>
-                    <p>Duration: 2025-2026</p></div>  
-                <!-- </div> -->
-            </div></div>
+                </div>
+            </div>
             <div class=" border border-2 border-info p-3 col-lg-6">
                 <div>
                     <h4>Experience:</h4>
                     <div class="d-flex gap-2">
                         <img src="./image/experience.png" class="mt-2" height="30px" alt="">
                         <h5>Completed a Intership of Web development from Heuristic Academy</h5>
-
                     </div>
                     <p class="ms-4 ps-3">Location: Mumbai</p>
                     <p class="ms-4 ps-3">Duration: 2024-2025</p>
-
-
-                    <input type="button" value="View " class="btn btn-primary mb-2 ms-5">
+                    <a href="documents/1.5month.jpg">
+                    <input type="button" value="View " class="btn btn-primary mb-2 ms-5"></a>
                     <div class="d-flex">
                         <i class="fa-solid fa-graduation-cap mt-3 fs-3 me-2"></i>
                         <h5>Successfully Completed a Internship As a MERN Stack Developer
@@ -253,196 +202,172 @@
                     </div>
                     <p class="ms-4 ps-3">Location: Mumbai</p>
                     <p class="ms-4 ps-3">Duration: 2024-2025</p>
-                    <input type="button" value="View " class="btn btn-primary mb-2 ms-5 ps-3 ">
+                    <a href="documents/9month.jpg">
+                    <input type="button" value="View " class="btn btn-primary mb-2 ms-5 ps-3 "></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="container">
+    <section id="skills" class="container">
         <div class="row">
-            <h1>Skills</h1>
-
-            <!-- First column -->
+            <h1 class="mb-4">Skills</h1>
             <div class="col-lg-6">
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/Github.png" class="mt-1" height="32px" alt="GitHub Logo">
                     <h5 class="mt-1">GitHub</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="GitHub Skill" aria-valuenow="75" aria-valuemin="0"
-                    aria-valuemax="100">
-                    <div class="progress-bar text-bg-warning" id="github-progress" style="width: 75%;" data-value="75">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar text-bg-warning" id="github-progress" style="width: 75%;">
                         75%</div>
                 </div>
-
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/HTML.png" class="mt-1" height="32px" alt="HTML Logo">
                     <h5 class="mt-1">HTML</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="HTML Skill" aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="html-progress" style="width: 80%;">80%</div>
                 </div>
-
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/CSS.png" class="mt-1" height="32px" alt="CSS Logo">
                     <h5 class="mt-1">CSS</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="CSS Skill" aria-valuenow="85" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="css-progress" style="width: 85%;">85%</div>
                 </div>
-
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/JavaScript.png" class="mt-1" height="32px" alt="JavaScript Logo">
                     <h5 class="mt-1">JavaScript</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="JavaScript Skill" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="js-progress" style="width: 70%;">70%</div>
                 </div>
-                  <div class="d-flex gap-2 ms-2 mb-1">
+                <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/HTML.png" class="mt-1" height="32px" alt="HTML Logo">
                     <h5 class="mt-1">NODEJS</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="HTML Skill" aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="html-progress" style="width: 80%;">80%</div>
                 </div>
             </div>
-
-            <!-- Second column -->
             <div class="col-lg-6">
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/Bootstrap.png" class="mt-1" height="32px" alt="Bootstrap Logo">
                     <h5 class="mt-1">Bootstrap</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="Bootstrap Skill" aria-valuenow="80"
-                    aria-valuemin="0" aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="bootstrap-progress" style="width: 80%;">80%</div>
                 </div>
-
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/jquery.png" class="mt-1" height="32px" alt="JQuery Logo">
                     <h5 class="mt-1">JQuery</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="JQuery Skill" aria-valuenow="65" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="jquery-progress" style="width: 65%;">65%</div>
                 </div>
-
                 <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/react.png" class="mt-1" height="32px" alt="React JS Logo">
                     <h5 class="mt-1">React JS</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="React JS Skill" aria-valuenow="70"
-                    aria-valuemin="0" aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="react-progress" style="width: 70%;">70%</div>
                 </div>
-                  <div class="d-flex gap-2 ms-2 mb-1">
+                <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/HTML.png" class="mt-1" height="32px" alt="HTML Logo">
                     <h5 class="mt-1">EXPRESS JS</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="HTML Skill" aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="html-progress" style="width: 80%;">80%</div>
                 </div>
-                  <div class="d-flex gap-2 ms-2 mb-1">
+                <div class="d-flex gap-2 ms-2 mb-1">
                     <img src="./image/HTML.png" class="mt-1" height="32px" alt="HTML Logo">
                     <h5 class="mt-1">POSTGRES SQL</h5>
                 </div>
-                <div class="progress" role="progressbar" aria-label="HTML Skill" aria-valuenow="80" aria-valuemin="0"
-                    aria-valuemax="100">
+                <div class="progress mb-3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar text-bg-warning" id="html-progress" style="width: 80%;">80%</div>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <section class="container">
-        <div class="row">
-            <h1>Tools</h1>
-
-            <!-- GitHub Tool -->
-            <div class="col-lg-3 border border-2 border-info py-5 px-5 me-2 tools text-center" data-aos="zoom-in-up"
-                style="margin-left: -10px !important;">
-                <i class="fa-brands fa-github fs-1 mt-3 icons-tools"></i>
-                <p data-aos="fade-up" data-aos-delay="100" class="library-name mt-3">GitHub</p>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <h1 class="mb-4">Tools</h1>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools text-center" data-aos="zoom-in-up">
+                    <i class="fa-brands fa-github fs-1 mt-3 icons-tools"></i>
+                    <p data-aos="fade-up" data-aos-delay="100" class="library-name mt-3">GitHub</p>
+                </div>
             </div>
-
-            <!-- VS Code Tool -->
-            <div class="col-lg-3 border border-2 border-info py-5 px-5 me-2 tools text-center" data-aos="zoom-in-up">
-                <img src="./image/vs.png" class="mt-3 me-3 icons-tools" alt="">
-                <p data-aos="fade-up" data-aos-delay="100" class="library-name mt-3">VS Code</p>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools text-center" data-aos="zoom-in-up">
+                    <img src="./image/vs.png" class="mt-3 me-3 icons-tools" alt="">
+                    <p data-aos="fade-up" data-aos-delay="100" class="library-name mt-3">VS Code</p>
+                </div>
             </div>
-
-            <!-- Linux Tool -->
-            <div class="col-lg-3 border border-2 border-info py-5 px-5 me-2 tools text-center" data-aos="zoom-in-up">
-                <i class="fa-brands fs-1 fa-linux mt-3 icons-tools"></i>
-                <p data-aos="fade-up" data-aos-delay="100" class="library-name mt-3">Linux</p>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools text-center" data-aos="zoom-in-up">
+                    <i class="fa-brands fs-1 fa-linux mt-3 icons-tools"></i>
+                    <p data-aos="fade-up" data-aos-delay="100" class="library-name mt-3">Linux</p>
+                </div>
             </div>
-
-            <!-- Canva Tool -->
-            <div class="col-lg-3 border border-2 border-info py-5 px-5 me-2 tools text-center"
-                style="margin-right: 0px !important;">
-                <img src="./image/canva.png" class=" me-3 icons-tools fs-3" alt="" style="margin-top: -10px;">
-                <p data-aos="fade-up" data-aos-delay="100" class="library-name">Canva</p>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools text-center" data-aos="zoom-in-up">
+                    <img src="./image/canva.png" class=" me-3 icons-tools fs-3" alt="" style="margin-top: -10px;">
+                    <p data-aos="fade-up" data-aos-delay="100" class="library-name">Canva</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="container">
-        <div class="row">
-            <h1>Libraries</h1>
-            <!-- AOS Library Card -->
-            <div class="col-lg-4 border border-2 border-info py-5 px-5 tools me-2" data-aos="flip-left"
-                style="margin-left: -10px;">
-                <i class="fa-solid fa-scroll icons-library" title="AOS Library"></i>
-                <h3 class="library-name mt-4">AOS</h3>
+    <section class="container mt-5">
+        <div class="row justify-content-center">
+            <h1 class="mb-4">Libraries</h1>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools" data-aos="flip-left">
+                    <i class="fa-solid fa-scroll icons-library" title="AOS Library"></i>
+                    <h3 class="library-name mt-4">AOS</h3>
+                </div>
             </div>
-
-            <!-- Swiper Library Card -->
-            <div class="col-lg-4 border border-2 border-info py-5 px-5 tools me-2" data-aos="flip-right">
-                <i class="fa-solid fa-eye icons-library" title="ScrollReveal Library"></i>
-                <h3 class="library-name mt-4">Swiper</h3>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools" data-aos="flip-right">
+                    <i class="fa-solid fa-eye icons-library" title="ScrollReveal Library"></i>
+                    <h3 class="library-name mt-4">Swiper</h3>
+                </div>
             </div>
-
-            <!-- ScrollReveal Library Card -->
-            <div class="col-lg-4 border border-2 border-info py-5 px-5 tools me-2" data-aos="flip-left">
-                <i class="fa-solid fa-sliders icons-library" title="Swiper Library"></i>
-                <h3 class="library-name mt-4">ScrollReveal</h3>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools" data-aos="flip-left">
+                    <i class="fa-solid fa-sliders icons-library" title="Swiper Library"></i>
+                    <h3 class="library-name mt-4">ScrollReveal</h3>
+                </div>
             </div>
-            <div class="col-lg-4 border border-2 border-info py-5 px-5 tools me-2" data-aos="flip-left"
-                style="margin-right: 0px !important;">
-                <i class="fa-solid fa-arrows-rotate icons-library" title="Animate.css Library"></i>
-                <h3 class="library-name mt-4">Animate.css</h3>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="border border-2 border-info py-5 px-5 tools" data-aos="flip-left">
+                    <i class="fa-solid fa-arrows-rotate icons-library" title="Animate.css Library"></i>
+                    <h3 class="library-name mt-4">Animate.css</h3>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <section class="container">
-        <div class="row">
-            <h1 class="mt-5 text-white">My Projects</h1>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/doctar.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
-                        alt="...">
+    <section id="projects" class="container">
+        <div class="row justify-content-center">
+            <h1 class="mt-5 text-white mb-4">My Projects</h1>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/doctar.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Doctor Website</h5>
                         <a href="https://github.com/sadeem8879/Docter_SPA.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://docter-web.netlify.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -451,24 +376,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/seirra.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
-                        alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/seirra.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Seirra Web</h5>
                         <a href="https://github.com/sadeem8879/seirra-bootsrap.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://seirrra.netlify.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -477,24 +399,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/event.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
-                        alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/event.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Events Organization</h5>
                         <a href="https://github.com/sadeem8879/Clone_page.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://events-org.netlify.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -503,30 +422,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4"></div>
-        </div>
-    </section>
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/netflix.png" class="card-img-top px-3 py-3  rounded-5" height="260px"
-                        width="370px" alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/netflix.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Netflix Website</h5>
                         <a href="https://github.com/sadeem8879/netflix-final.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://joyful-hotteok-0a6d4a.netlify.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -535,24 +445,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/cake.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
-                        alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/cake.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Cake Shop Web</h5>
                         <a href="https://github.com/sadeem8879/cake-shop1.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://cake-shop1.vercel.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -561,24 +468,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/morgan.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
-                        alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/morgan.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Morgan Website</h5>
                         <a href="https://github.com/sadeem8879/morgan-website-raect.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://morgan-website-raect.vercel.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -587,28 +491,21 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/api.png" class="card-img-top px-3 py-3  rounded-5" height="260px"
-                        width="370px" alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/api.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Tesla api app</h5>
                         <a href="hhttps://github.com/sadeem8879/react-api.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://react-api-app-beta.vercel.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -617,24 +514,21 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/form.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
-                        alt="...">
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/form.png" class="card-img-top px-3 py-3 rounded-5" height="260px" alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">Conatct form</h5>
                         <a href="https://github.com/sadeem8879/contact-form.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
-                        <a href="https://musical-twilight-da59d0.netlify.app/""
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                        <a href="https://musical-twilight-da59d0.netlify.app/"
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -643,24 +537,22 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
-                <div class="card rounded-4 border border-5 neon-border shadow-neon"
-                    style="width: 18rem; background-color: #1c1c1c;">
-                    <img src="./image/e-commerce.png" class="card-img-top px-3 py-3  rounded-5" height="260px" width="370px"
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 rounded-4 border border-5 neon-border shadow-neon" style="background-color: #1c1c1c;">
+                    <img src="./image/e-commerce.png" class="card-img-top px-3 py-3 rounded-5" height="260px"
                         alt="...">
                     <div class="card-body text-white">
                         <h5 class="card-title mb-3 text-center me-2">E-commerce Website</h5>
                         <a href="https://github.com/sadeem8879/ecommerce-website.git"
-                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 ms-3 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-brands fa-github fs-5 mt-2 icons-s me-1"></i>
                                 <p class="mt-1" style="margin-top:5px !important;"> Github</p>
                             </div>
                         </a>
                         <a href="https://e-commerce-webs.netlify.app/"
-                            class="btn btn-outline-light me-2  custom-btn rounded-5  px-3">
-
+                            class="btn btn-outline-light me-2 custom-btn rounded-5 px-3">
                             <div style="margin-top: -10px;" class="d-flex mt-2 px-3">
                                 <i class="fa-solid fa-eye mt-2 icons-s me-1 "></i>
                                 <p class="mt-1 me-2"> view</p>
@@ -669,88 +561,76 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <!-- <div data-aos="flip-left" class="text-light">
-        Content that fades in as you scroll.bksjhvh
-    </div>
-    <div data-aos="fade-up" class="text-light">
-        This should fade in when you scroll.
-    </div> -->
-
-    <section class="mt-5">
-        <div class="row ms-auto">
-            <h1 class="mt-5 text-center">Contact Me </h1>
-            <div class="col-lg-12 d-flex mt-4 text-center gap-0">
-                <div class="col-lg-3 ms-5" style="margin-left: 50px !important;">
-                    <i class="fa-solid fa-phone icons fs-4"></i>
-                    <h4 class="form-text text-info fs-5">Call me on</h4>
-                    <div class="d-flex gap-1 ms-5 ps-5">
-                        <p class="d-flex">
-                        <p>Phone:</p>8879480322</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 " style="margin-left: -60px;">
-                    <i class="fa-solid fa-envelope icons fs-4"></i>
-                    <h4 class="text-info fs-5">Email</h4>
-                    <p>ansarisadeem8879@gmail.com</p>
-                </div>
-                <div class="col-lg-3" style="margin-left: -20px;">
-                    <i class="fa-brands fa-github icons fs-4"></i>
-                    <h4 class="text-info fs-5">Github</h4>
-                    <a href="https://github.com/sadeem8879"
-                        class="text-decoration-none text-white">https://github.com/sadeem8879</a>
-                </div>
-                <div class="col-lg-3" style="margin-left: -30px;">
-                    <i class="fa-brands fa-whatsapp icons fs-4"></i>
-                    <h4 class="text-info fs-5">whatsapp</h4>
-                    <a href="https://api.whatsapp.com/send/?phone=8879480322&text&type=phone_number&app_absent=0"
-                        class="text-decoration-none text-white">8879480322</a>
-                </div>
+    <section id="contact" class="container mt-5">
+        <div class="row">
+            <h1 class="mt-5 text-center mb-4">Contact Me</h1>
+            
+            <div class="col-lg-3 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-phone icons fs-4"></i>
+                <h4 class="form-text text-info fs-5 mt-2">Call me on</h4>
+                <p>Phone: 8879480322</p>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 text-center">
+                <i class="fa-solid fa-envelope icons fs-4"></i>
+                <h4 class="text-info fs-5 mt-2">Email</h4>
+                <p>ansarisadeem8879@gmail.com</p>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 text-center">
+                <i class="fa-brands fa-github icons fs-4"></i>
+                <h4 class="text-info fs-5 mt-2">Github</h4>
+                <a href="https://github.com/sadeem8879" class="text-decoration-none text-white">github.com/sadeem8879</a>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 mb-4 text-center">
+                <i class="fa-brands fa-whatsapp icons fs-4"></i>
+                <h4 class="text-info fs-5 mt-2">Whatsapp</h4>
+                <a href="https://api.whatsapp.com/send/?phone=8879480322&text&type=phone_number&app_absent=0"
+                    class="text-decoration-none text-white">8879480322</a>
             </div>
         </div>
     </section>
-    <section class="container">
-  <div class="row">
-    <h1 class="fs-2 text-center mt-3">SEND ME AN EMAIL</h1>
-    <p class="text-center fs-4 text-success">I'M VERY RESPONSIVE TO MESSAGES</p>
+    
+    <section class="container mt-4 mb-5">
+        <div class="row">
+            <h1 class="fs-2 text-center mt-3">SEND ME AN EMAIL</h1>
+            <p class="text-center fs-4 text-success">I'M VERY RESPONSIVE TO MESSAGES</p>
 
-    <div class="col-lg-12">
-      <form action="" method="POST" class="text-center">
-
-        <!-- Name and Email -->
-        <div class="d-flex flex-column flex-md-row gap-2 mb-2">
-          <input type="text" class="form-control mb-2 py-2 form-input" id="name" placeholder="Name" required>
-          <input type="email" class="form-control mb-2 py-2 form-input" id="email" placeholder="Email" required>
+            <div class="col-lg-12">
+                <form action="" method="POST" class="text-center">
+                    <div class="d-flex flex-column flex-md-row gap-2 mb-2">
+                        <input type="text" class="form-control mb-2 py-2 form-input" id="name-bottom" placeholder="Name" required>
+                        <input type="email" class="form-control mb-2 py-2 form-input" id="email-bottom" placeholder="Email" required>
+                    </div>
+                    <textarea class="form-control mb-3 form-input" id="subject-bottom" rows="1" placeholder="Subject"
+                        required></textarea>
+                    <textarea class="form-control mb-3 form-input" id="message-bottom" rows="3" placeholder="Your Message"
+                        required></textarea>
+                    <div class="text-center">
+                        <button class="btn btn-info rounded-5 py-2 px-5" id="sendButton" type="submit">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
+    </section>
 
-        <!-- Subject -->
-        <textarea class="form-control mb-3 form-input" id="subject" rows="1" placeholder="Subject" required></textarea>
-
-        <!-- Message -->
-        <textarea class="form-control mb-3 form-input" id="message" rows="3" placeholder="Your Message" required></textarea>
-
-        <!-- Centered Button -->
-        <div class="text-center">
-          <button class="btn btn-info rounded-5 py-2 px-5" id="sendButton" type="submit">
-            Send Message
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-</section>
-
-    <script>
-        AOS.init();
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="index.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
 
 </body>
 
