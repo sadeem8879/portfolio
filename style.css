@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.8rem !important; /* Smaller headings */
         text-align: center;
         margin-right: 0;
-        margin-left: 0 !important;
+        margin-left: 90 !important;
     }
     
     .myname {
@@ -404,4 +404,52 @@ h1, h2, h3, h4, h5, h6 {
         height: 200px; /* A fixed height can work well on mobile */
         object-fit: cover;
     }
+}/* This is the new style for the hand image */
+.waving-hand {
+  width: 60px;
+  height: auto;
+}
+
+/* This is the media query you already have */
+@media (max-width: 767.98px) {
+
+  /* ADD THIS RULE INSIDE YOUR EXISTING MEDIA QUERY */
+  .waving-hand {
+    width: 50px; /* Makes the hand smaller on mobile */
+
+  }
+
+  /* ... (all your other mobile styles) ... */
+}/* ✅ Default style (for desktop) */
+.waving-hand {
+  width: 45px;
+  height: 45px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+/* ✅ Fix spacing and alignment for smaller screens */
+@media (max-width: 768px) {
+  .d-flex .myname {
+    font-size: 1.5rem; /* reduce size slightly */
+    margin-right: 4px; /* tighter spacing before the hand */
+  }
+
+  .waving-hand {
+    width: 35px;
+    height: 35px;
+    margin-top: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+  }
+
+  .home-section h1 {
+    text-align: center;
+  }
+
+  .d-flex {
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 4px; /* add consistent small gap */
+  }
 }
