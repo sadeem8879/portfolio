@@ -1,0 +1,546 @@
+body {
+    background-color: #00171f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.navbar {
+    /* background-color: black !important; */
+    background-color: #0c6291 !important;
+    /* background: transparent !important; */
+    /* backdrop-filter: blur(4) !important; */
+
+}
+
+#heading {
+    font-family: "Vina Sans", sans-serif;
+    font-size: 2rem !important;
+    letter-spacing: 2px !important;
+}
+
+#name {
+    font-family: "Lobster Two", sans-serif;
+
+}
+
+.home-section {
+    margin-top: 150px !important;
+    /* margin-left: 50px !important; */
+    margin-right: -30px;
+    margin-left: 20px;
+}
+
+.half-name {
+    color: #00CCFF;
+    color: #197278;
+    /* margin-top: 100px; */
+    /* font-family: "Love Ya Like A Sister", cursive/; */
+    /* font-family: 'Love Ya Like A Sister', cursive; */
+    font-family: 'Dancing Script', cursive !important;
+    margin-right: -30px;
+    /* font-style: italic; */
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+.myname {
+    font-family: 'Love Ya Like A Sister', cursive;
+    font-style: italic;
+    font-size: 30px !important;
+    font-weight: 500;
+    color: #00CCFF;
+
+}
+
+.typing-container {
+    font-size: 1.5rem;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    color: #fff;
+    color: #00CCFF;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: caret 0.5s steps(1) infinite;
+}
+
+
+.resume-btn {
+    padding: 12px 24px;
+    background: #4a90e2;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-left: 99px !important;
+
+    transition: background 0.3s, color 0.3s, transform 0.3s, border-radius 0.3s;
+}
+
+.resume-btn:hover {
+    background: #7b3fe4;
+    /* Change background color on hover */
+    color: #ffffff;
+    border-color: #7b3fe4;
+    /* Border color to match the background */
+    transform: scale(1.1);
+    /* Slightly enlarge the button */
+    border-radius: 24px;
+    /* Increase the border-radius for a smoother, pill shape */
+}
+
+.resume-btn:active {
+    transform: scale(0.90);
+    /* Slightly reduce the scale on click for a pressed effect */
+    background: #5928a6;
+    /* Darken the color for a more subtle pressed effect */
+}
+
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Login Form Container */
+.login-form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    /* Dark background */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    transition: right 0.3s ease-in-out;
+}
+
+.login-form-container.active {
+    right: 0;
+}
+
+.login-form-container form {
+    background-color: #333;
+    padding: 2rem;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.form-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00aaff;
+    /* Blue color */
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    background-color: #444;
+    color: white;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #00aaff;
+    /* Blue border on focus */
+}
+
+.input-group input::placeholder {
+    color: #bbb;
+}
+
+/* Checkbox */
+.check-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.check-box label {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+/* Submit Button */
+.submit-btn {
+    background-color: #00aaff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #007b8c;
+    /* Darker blue */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+/* Links */
+.forgot-password,
+.create-account {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 15px;
+    color: #aaa;
+}
+
+.forgot-password a,
+.create-account a {
+    text-decoration: underline;
+    color: #00aaff;
+    /* Blue color */
+}
+
+#close-login-btn {
+    position: absolute;
+    top: 12px;
+    right: 520px;
+
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+#close-login-btn:hover {
+    color: #f44336;
+    /* Red on hover */
+}
+
+.form-control {
+    background-color: #333;
+    /* color: #fff !important; */
+}
+
+.form-control::placeholder {
+    color: #fff !important;
+}
+
+.form-control:focus {
+    background-color: #555;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    animation: rotate 2s linear infinite;
+}
+
+.bio-text {
+    border-bottom: 1ps solid #00aaff !important;
+}
+
+.tools {
+    transition: transform 0.3s ease-in-out;
+    /* Adds smooth transition */
+    height: 200px;
+}
+
+.tools:hover {
+    transform: scale(1.1) !important;
+    transition-delay: 0.2s !important;
+}
+
+.progress-bar {
+    transition: width 0.5s ease-in-out;
+    /* Smooth transition */
+}
+
+.shadow-light {
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.4), 0 0 25px rgba(0, 123, 255, 0.2);
+}
+
+.neon-border {
+    border-color: #00ffcc;
+    /* Neon turquoise border */
+}
+
+.shadow-neon {
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.6), 0 0 35px rgba(0, 255, 204, 0.4), 0 0 55px rgba(0, 255, 204, 0.3);
+}
+
+.custom-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* margin-top: ; */
+    /* padding-top: -20px;
+     */
+     padding: 0 !important;
+}
+
+.custom-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.6), 0 0 20px rgba(0, 255, 204, 0.4), 0 0 30px rgba(0, 255, 204, 0.3);
+    color: #00ffcc;
+    /* Optional: Change text color on hover */
+    border-color: #00ffcc;
+    /* Optional: Change border color to match glow */
+}
+
+.card-title {
+    background: linear-gradient(45deg, #ff0066, #ffcc00, #00ffcc, #00ccff, #cc00ff);
+    background-size: 300%;
+    color: transparent;
+    /* Fallback for unsupported browsers */
+    font-weight: bold;
+    background-clip: text;
+    /* Works in most modern browsers */
+    -webkit-background-clip: text;
+    /* For Safari/Chrome */
+    -webkit-text-fill-color: transparent;
+    /* For Safari */
+    animation: gradientAnimation 3s ease infinite;
+}
+
+.card-title:hover {
+    animation: gradientHover 0.5s ease;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes gradientHover {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.card-img-top {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.1);
+    transition-delay: 0.2s ease;
+}
+
+.icons {
+    padding: 10px;
+}
+
+.icons:hover {
+    background-color: #4A90E2;
+    border-radius: 17px;
+}
+
+.form-input {
+    border: none !important;
+}
+
+.btn-info:hover {
+    background-color: transparent;
+    color: #ffff;
+}
+
+/* Ensures that progress bars fit within their containers */
+.progress {
+    height: 20px;
+}
+
+/* Optional: you can tweak the progress bar color */
+.progress-bar {
+    background-color: #f39c12;
+    /* Yellow color */
+}
+
+.icons-tools {
+    font-size: 50px;
+    color: #00ffcc;
+    transition: transform 0.3s ease;
+}
+
+.icons-tools:hover {
+    transform: scale(1.1);
+    animation: glowPulse 1.5s infinite alternate;
+    /* background-color: #444;
+    color: black; */
+    object-fit: contain;
+    mix-blend-mode: color;
+}
+
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc, 0 0 45px #00ffcc, 0 0 60px #00ffcc;
+    }
+    100% {
+        box-shadow: 0 0 25px #00ffcc, 0 0 50px #00ffcc, 0 0 75px #00ffcc, 0 0 100px #00ffcc;
+    }
+}
+/* General styling for library cards */
+.tools {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    width: 280px;
+}
+
+.icons-library {
+    font-size: 50px;
+    color: #00ccff;
+    transition: transform 0.3s ease;
+}
+
+/* Hide library name by default */
+.library-name {
+    display: none; /* Hidden initially */
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #00ccff;
+}
+
+/* Show library name on hover */
+.tools:hover .library-name {
+    display: block;
+}
+
+/* Optional: Scale the icon on hover for emphasis */
+.tools:hover .icons-library {
+    transform: scale(1.1);
+}
+
+/* Glow effect on icon */
+.icons-library:hover {
+    animation: glowEffect 1.5s infinite alternate;
+}
+
+@keyframes glowEffect {
+    0% {
+        box-shadow: 0 0 10px #00ccff, 0 0 20px #00ccff, 0 0 30px #00ccff;
+    }
+    100% {
+        box-shadow: 0 0 20px #00ccff, 0 0 40px #00ccff, 0 0 60px #00ccff;
+    }
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.bio-text {
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  color: #f1f1f1;
+  border-bottom: 1px solid rgba(0, 204, 255, 0.4);
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.bio-text span {
+  color: #00ccff;
+}
+
+.bio-text:hover {
+  color: #00ccff;
+}
+
+.resume-btn {
+  background-color: #00ccff;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.resume-btn:hover {
+  transform: scale(1.05);
+  background-color: #0099cc;
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+}
+h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* This is the good .bio-text rule from the end of your file.
+  Make sure this is the only one, or that it overrides any others.
+*/
+.bio-text {
+  font-size: 1.05rem;
+  letter-spacing: 0.5px;
+  color: #f1f1f1;
+  /* A subtle border looks great */
+  border-bottom: 1px solid rgba(0, 204, 255, 0.4);
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.bio-text span {
+  /* This color matches your h4 highlight */
+  color: #00ccff; 
+}
+
+.bio-text:hover {
+  color: #00ccff; /* Glow effect on hover */
+}
+
+/* This is the good .resume-btn rule from the end of your file.
+  It's much better than the one with the 'margin-left: 99px !important;'.
+*/
+.resume-btn {
+  background-color: #00ccff;
+  color: #fff; /* Changed from #000 to #fff for better contrast */
+  text-decoration: none; /* Added to remove underline from the <a> tag */
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.resume-btn:hover {
+  transform: scale(1.05);
+  background-color: #0099cc; /* A slightly darker shade on hover */
+  box-shadow: 0 0 15px rgba(0, 204, 255, 0.6);
+}
