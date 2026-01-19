@@ -104,11 +104,15 @@ h1, h2, h3, h4, h5, h6 {
     /* margin-right:200px */
     
 }
-
+.card-body{
+    margin-left: 35px;
+}
 #close-login-btn:hover {
     color: #f44336;
 }
-
+.card-title{
+    margin-left: -20px;
+}
 /* === ABOUT ME SECTION === */
 .bio-text {
   font-size: 1.05rem;
