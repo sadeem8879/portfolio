@@ -134,3 +134,14 @@ function validateEmail(email) {
     var re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     return re.test(String(email).toLowerCase());
 }
+const talkBtn = document.getElementById('talk-btn');
+const loginFormContainer = document.querySelector('.login-form-container');
+const closeLoginBtn = document.getElementById('close-login-btn');
+
+talkBtn.addEventListener('click', () => {
+  loginFormContainer.style.display = 'flex';
+});
+
+closeLoginBtn.addEventListener('click', () => {
+  loginFormContainer.style.display = 'none';
+});
